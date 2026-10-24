@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khoa's Website</title>
+    <link rel="icon" href="images/logo.png">
+    <style>
+        #dynamic-bar {
+            border: thick solid cyan;
+        }
+
+        my-image {
+            display: block;
+        }
+        my-image img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+        }
+    </style>
+    <script>
+        class HelloWorld extends HTMLElement {
+            connectedCallback() {
+                this.textContent = 'Hello World!'
+            }
+        }
+        customElements.define('hello-world', HelloWorld)
+    </script>
+</head>
+<body>
+    <header>
+        <my-image>
+            <picture>
+                <source srcset="images/me-image-2.jpeg" />
+                <img src="images/" alt="Author's image"/>
+            </picture>
+        </my-image>
+
+        <h2><span id="dynamic-bar">Hello, Human!!!</span></h2>
+        <section>
+            <h3>Loading human data...</h3>
+            <label for="file">Uploading "human.html":</label>
+            <progress id="file" max="100" value="90"></progress>
+        </section>
+
+        <section>
+            <h3>> <hello-world></hello-world>_</h3>
+        </section>
+
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#experience">Experiences</a></li>
+                <li><a href="#project">Projects</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+                <li><a href="#experiment">Tag Experiments</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>My Home</h1>
+
+        <noscript>
+            <p>Sike!!! Javascript is off but I'm still working!!!</p>
+        </noscript>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <a href="about.html">More about me</a>
+        </section>
+
+        <section id="experience">
+            <h2>My Experiences</h2>
+            <a href="experience.html">See what I can do</a>
+        </section>
+
+        <section id="project">
+            <h2>My Projects</h2>
+            <a href="project.html">See my projects</a>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <a href="contact.html">Get to know me</a>
+        </section>
+
+        <section id="experiment">
+            <h2>My HTML Tag Experiments</h2>
+            <a href="experiments.html">Click for curiosity</a>
+        </section>
+
+        <br>
+
+        <section>
+            <h2>Just a Button</h2>
+            <button command="show-modal" commandfor="nothing"><b>Click me to see nothing!</b></button>
+
+            <dialog id="nothing">
+                <p>Sike!!! There's a dialog. &#129322;</p>
+                <button command="close" commandfor="nothing">Close</button>
+            </dialog>
+        </section>
+
+        <section>
+            <h2>Is &lt;svg&gt; Even A Tag?</h2>
+            <svg width="400" height="200" viewBox="0 0 100 50">
+                <circle cx="50" cy="25" r="20" fill="cyan" />
+                <text x="50" y="25" text-anchor="middle" font-size="5">Drawn using &lt;svg&gt;</text>
+            </svg>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 Khoa Le</p>
+    </footer>
+</body>
+</html>

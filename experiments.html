@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="experience.html">Experiences</a></li>
+                <li><a href="project.html">Projects</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+                <li><a href="experiments.html"><strong>Tag Experiments</strong></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Tag Experiments</h1>
+
+        <section>
+            <h2>&lt;template&gt;</h2>
+            <p>Read the line below:</p>
+            <template for="demonstration">
+                <p>If you can see this line on the website, someone's getting "fired" &#128514;</p>
+            </template>
+        </section>
+
+        <section>
+            <h2>&lt;video&gt; and &lt;audio&gt;</h2>
+            <p>I use the examples video and audio from MDN Docs!</p>
+
+            <p><b>Flower blossoms:</b></p>
+            <video controls width="300">
+                <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4"/>
+            </video>
+
+            <p><b>T-Rex roars:</b></p>
+            <audio controls>
+                <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.mp3"/>
+            </audio>
+        </section>
+        
+        <section>
+            <h2>&lt;canvas&gt;</h2>
+            <canvas width="300" height="150" style="border-style: solid;"></canvas>
+            <script>
+                const canvas = document.querySelector('canvas');
+                const ctx = canvas.getContext('2d');
+                let drawing = false;
+
+                canvas.addEventListener('mousedown', () => drawing = true);
+                canvas.addEventListener('mouseup', () => drawing = false);
+                canvas.addEventListener('mousemove', (e) => {
+                    if (!drawing) {return;}
+                    ctx.fillRect(e.offsetX, e.offsetY, 5, 5)
+                });
+            </script>
+        </section>
+
+        <section>
+            <h2>MathML*</h2>
+            <p>Einstein's Famous Mass-Energy Equivalence Formula:</p>
+            <math display="block">
+                <mi>E</mi>
+                <mo>=</mo>
+                <mi>m</mi>
+                <msup><mi>c</mi><mn>2</mn></msup>
+            </math>
+            <p><i>*Note:
+                Despite MathML's longevity, it ONLY lives in Firefox. 
+                Until 2023, Chrome, Edge, Safari, and Opera begin to 
+                allow MathML to display in their browsers according to 
+                <a href="https://caniuse.com/?search=MathML">caniuse.com</a>.
+            </i></p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 Khoa Le</p>
+    </footer>
+</body>
+</html>

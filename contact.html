@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Khoa</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="experience.html">Experiences</a></li>
+                <li><a href="project.html">Projects</a></li>
+                <li><a href="contact.html"><strong>Contact Me</strong></a></li>
+                <li><a href="experiments.html">Tag Experiments</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Contact Me</h1>
+
+        <form action="#" method="post">
+            <div class="form-name">
+                <label for="name">Enter your name:</label>
+                <input type="text" name="name" id="name" required/>
+            </div>
+
+            <div class="form-email">
+                <label for="email">Enter your email:</label>
+                <input type="email" name="email" id="email" required/>
+            </div>
+
+            <div class="form-message">
+                <label for="message">Message:</label>
+                <textarea 
+                    name="message" 
+                    id="message" 
+                    rows="5" 
+                    cols="30" 
+                    placeholder="Let me know about you..." 
+                    required></textarea><br>
+            </div>
+
+            <fieldset>
+                <legend>Choose your favorite agent:</legend>
+
+                <input type="radio" name="agent" id="claude" required/>
+                <label for="claude">Claude Code</label>
+                
+                <input type="radio" name="agent" id="codex" required/>
+                <label for="codex">Codex</label>
+            </fieldset>
+
+            <div class="form-submit">
+                <input type="submit" value="Send">
+            </div>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2026 Khoa Le</p>
+    </footer>
+</body>
+</html>
