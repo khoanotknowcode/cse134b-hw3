@@ -1,0 +1,74 @@
+body {
+    font-family: "Comic Sans MS", sans-serif;
+    color: #F5A623;
+    background-color: black;
+    line-height: 2;
+    max-width: 75%;
+    margin: 0 auto;
+    padding: 5%;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+blockquote {
+    border-style: solid;
+    border-color: rgb(242, 198, 237);
+    border-width: 2px;
+    margin: 0 10%;
+    padding: 0 7% 4% 7%;
+}
+
+a:hover {
+    color: rgb(64, 127, 251)
+}
+
+a:focus {
+    color: rgb(138, 216, 253)
+}
+
+input:hover {
+    border-color: #F5A623;
+    border-width: 2px;
+    border-radius: 4%;
+}
+
+input:focus {
+    border-width: 3px;
+}
+
+button:hover {
+    background-color: rgb(250, 228, 172);
+}
+
+button:focus {
+    background-color: #F5A623;
+}
+
+/* 
+    Same selector but different values demonstrations.
+    Answer: The idea of later value overwrites the previous value is 
+    the idea of CSS - Cascading Style Sheet meaning the style is applied
+    down the stream. Here, I first apply small font to <p> then apply 
+    new bigger font and CSS overwrites the smaller font.
+*/
+p {
+    font-size: smaller;
+}
+
+p {
+    font-size: 1.1rem;
+}
+
+#warning {
+    background-color: #9b0106;
+}
+
+.latin {
+    font-style: italic;
+}
