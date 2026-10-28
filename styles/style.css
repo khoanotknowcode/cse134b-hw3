@@ -1,0 +1,94 @@
+/* Global Reset */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Root Variables */
+:root {
+    --main-bg-color: white;
+    --main-text-color: black;
+    --main-accent-color: skyblue; /* links, button, :hover */
+    --font-main: "Comic Sans MS", system-ui, sans-serif;
+    --space-x-sm: 0.25rem;
+    --space-sm: 0.5rem;
+    --space-md: 1rem;
+    --space-lg: 2rem;
+    --border-size: 3px;
+}
+
+/* Base Styles */
+body {
+    display: flex;
+    /* Size main take most of the page */
+    flex-direction: column;
+    min-height: 100vh;
+    padding: var(--space-md) 5%; /* margin + min-height > screen => padding + min-height */
+    font-family: var(--font-main);
+    color: var(--main-text-color);
+    background-color: var(--main-bg-color);
+    border-style: solid;
+}
+
+header, main, footer {
+    border-style: solid; /* REMOVE */
+    margin: var(--space-md) 0;
+}
+
+header {
+    padding: var(--space-md) 0;
+    border: none; /* REMOVE */
+    border: var(--border-size) solid black;
+    border-radius: var(--space-md);
+
+    nav {
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: var(--space-sm); /* Give space between nav elements */
+            list-style: none;
+
+            li {
+                a {
+                    text-decoration: none;
+                    color: black;
+                    padding: var(--space-x-sm) var(--space-sm);
+                    border-radius: var(--space-sm) var(--space-sm);
+                }
+                
+                a:hover:not(:focus) {
+                    text-decoration: underline wavy;
+                    text-decoration-thickness: 2px;
+                    text-decoration-skip-ink: none;
+                }
+
+                a:focus {
+                    background-color: gray;
+                }
+            }
+        }
+    }
+}
+
+main {
+    flex: 1;
+}
+
+footer {
+    padding: var(--space-md) 0;
+    border: none; /* REMOVE after style */
+    border-top: var(--border-size) solid black;
+}
+
+@media (min-width: 768px) {
+    body {
+        padding: var(--space-md) 10%;
+    }
+}
