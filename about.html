@@ -4,6 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Khoa</title>
+    <link rel="icon" href="images/logo.png">
+    <style>
+        #dynamic-bar {
+            border: thick solid cyan;
+        }
+
+        my-image {
+            display: block;
+        }
+        my-image img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -14,12 +29,18 @@
                 <li><a href="experience.html">Experiences</a></li>
                 <li><a href="project.html">Projects</a></li>
                 <li><a href="contact.html">Contact Me</a></li>
-                <li><a href="experiments.html">Tag Experiments</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <h1>About Me</h1>
+
+        <my-image>
+            <picture>
+                <source srcset="images/me-image-2.jpeg" />
+                <img src="images/" alt="Author's image"/>
+            </picture>
+        </my-image>
 
         <h2>Bio</h2>
         <ul>
@@ -47,30 +68,6 @@
             <li>Resistant to change.</li>
             <li>Overthinking.</li>
         </ul>
-
-        <h2>Book Rankings:</h2>
-        <ol>
-            <li>Atomic Habits <i>by James Clear</i></li>
-            <li>The Psychology of Money <i>by Morgan Housel</i></li>
-        </ol>
-
-        <h2>Current Favorite Song:</h2>
-        <iframe 
-            width="560" 
-            height="315" 
-            src="https://www.youtube.com/embed/Bv-1BnoB75k?si=P3BKW-EhZQvyWgDE" 
-            title="YouTube video player" 
-            style="border: 0;" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-            referrerpolicy="strict-origin-when-cross-origin" 
-            allowfullscreen>
-        </iframe>
-
-        <h2>First Ever HTML:</h2>
-        <article>
-            <h3>World Wide Web</h3>
-            <a href="https://info.cern.ch/hypertext/WWW/TheProject.html">TheProject.html</a>
-        </article>
     </main>
     <footer>
         <p>&copy; 2026 Khoa Le</p>
