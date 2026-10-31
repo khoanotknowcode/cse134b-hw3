@@ -18,8 +18,11 @@ img {
     --font-main: "Comic Sans MS", system-ui, sans-serif;
     --space-x-sm: 0.25rem;
     --space-sm: 0.5rem;
+    --space-sm-md: 0.75rem;
     --space-md: 1rem;
+    --space-lg-md: 1.75rem;
     --space-lg: 2rem;
+    --space-x-lg: 3rem;
     --border-size: 3px;
 }
 

@@ -1,4 +1,6 @@
 main {
+    display: grid;
+
     .swap {
         display: grid;
 
@@ -22,7 +24,8 @@ main {
                     width: fit-content;
                 }
 
-                p {
+                /* Apply line-spacing of 1.6rem for h3 and its sibling p */
+                p + h3 {
                     line-height: 1.6rem;
                 }
             }
