@@ -6,20 +6,7 @@
     <title>About Khoa</title>
     <link rel="icon" href="images/logo.png">
     <link rel="stylesheet" href="styles/style.css">
-    <style>
-        #dynamic-bar {
-            border: thick solid cyan;
-        }
-
-        my-image {
-            display: block;
-        }
-        my-image img {
-            width: 200px;
-            height: 200px;
-            border-radius: 50%;
-        }
-    </style>
+    <link rel="stylesheet" href="styles/about.css">
 </head>
 <body>
     <header>
@@ -34,41 +21,19 @@
         </nav>
     </header>
     <main>
-        <h1>About Me</h1>
+        <div class="swap">
+            <h1>About Me?</h1>
 
-        <my-image>
-            <picture>
-                <source srcset="images/me-image-2.jpeg" />
-                <img src="images/" alt="Author's image"/>
-            </picture>
-        </my-image>
-
-        <h2>Bio</h2>
-        <ul>
-            <li>Name: Khoa Le</li>
-            <li>Age: 22</li>
-            <li>Job: Computer Science Student</li>
-            <li>Location: San Diego</li>
-            <li>Interest: <i>Changing over time...</i></li>
-        </ul>
-
-        <h2>Academics</h2>
-        <ul>
-            <li>Green River College (2021 - 2024)</li>
-            <li>UC San Diego (2024 - Now)</li>
-        </ul>
-
-        <h2>Goals</h2>
-        <ul>
-            <li>Make my own personal website.</li>
-            <li>Figure out CS expertise I perform best on.</li>
-        </ul>
-
-        <h2>Downsides</h2>
-        <ul>
-            <li>Resistant to change.</li>
-            <li>Overthinking.</li>
-        </ul>
+            <section class="img-bio">
+                <img src="images/me-image-2.jpeg" alt="Author's image"/>
+                
+                <p>
+                    Hey, this is me.<span class="name">Khoa Le</span> 
+                    I know a little bit of anything including systems, machine learning, web development, and database.
+                    I like running, swimming, playing badminton, and reading.
+                </p>
+            </section>
+        </div>
     </main>
     <footer>
         <p>&copy; 2026 Khoa Le</p>

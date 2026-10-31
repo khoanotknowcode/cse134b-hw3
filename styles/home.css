@@ -22,10 +22,10 @@ main {
 }
 
 @keyframes fade-out {
-        to {
-            opacity: 0;
-        }
+    to {
+        opacity: 0;
     }
+}
 
 @keyframes fade-in {
     to {
