@@ -33,7 +33,6 @@ body {
     font-family: var(--font-main);
     color: var(--main-text-color);
     background-color: var(--main-bg-color);
-    border-style: solid;
 }
 
 header, main, footer {
